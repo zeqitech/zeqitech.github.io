@@ -1,3 +1,33 @@
+@font-face {
+  font-family: 'harmony';
+  src: url('/assets/fonts/HarmonyOS_Sans_SC_Black.ttf')
+    url('/assets/fonts/HarmonyOS_Sans_SC_Bold.ttf')
+    url('/assets/fonts/HarmonyOS_Sans_SC_Light.ttf')
+    url('/assets/fonts/HarmonyOS_Sans_SC_Medium.ttf')
+    url('/assets/fonts/HarmonyOS_Sans_SC_Regular.ttf')
+    url('/assets/fonts/HarmonyOS_Sans_SC_Thin.ttf');
+}
+
+@font-face {
+  font-family: 'fira code';
+  src: url('/assets/fonts/FiraCode-Bold.woff')
+    url('/assets/fonts/FiraCode-SemiBold.woff')
+    url('/assets/fonts/FiraCode-Medium.woff')
+    url('/assets/fonts/FiraCode-Regular.woff')
+    url('/assets/fonts/FiraCode-Light.woff')
+    url('/assets/fonts/FiraCode-VF.woff');
+}
+
+@font-face {
+  font-family: 'comic';
+  src: url('/assets/fonts/comic.ttf');
+}
+
+@font-face {
+  font-family: 'xingkai';
+  src: url('/assets/fonts/书体坊赵九江钢笔行书.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,19 +38,24 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
   background-color: var(--grey-2);
+  font-family: 'fira code', 'harmony';
 }
 
 /* common css */
 :root {
-  --primary-color: rgba(123, 24, 0, 1);
-  --text-light: rgb(255, 245, 245);
+  --primary-color: var(--red-6);
+  --zeqi-red: rgba(195, 47, 1, 1);
   --grey-1: #fff;
   --grey-2: #fafafa;
   --grey-8: #595959;
   --grey-9: #434343;
   --grey-10: #262626;
+  --red-1: #fff1f0;
+  --red-2: #ffccc7;
+  --red-6: #f5222d;
+  --geekblue-1: #f0f5ff;
+  --geekblue-2: #d6e4ff;
 }
 
 /* nav ==================================================================== */
@@ -47,19 +82,20 @@ nav .nav-item {
 }
 
 /* left */
-nav .nav-item img {
+nav .nav-title img {
   /* logo */
-  height: 100%;
+  height: 80%;
   object-position: center;
   object-fit: cover;
   border-radius: 1rem;
 }
 
-nav .nav-item a {
+nav .nav-title a {
   /* title */
   margin-left: 1rem;
   color: var(--grey-10);
   text-decoration: none;
+  font-family: 'xingkai';
 }
 
 nav .nav-link-list a {
@@ -101,15 +137,67 @@ nav .nav-link-list a:hover::after {
 header {
   width: 100%;
   height: 100vh;
-  padding-top: 65px;
+  /* padding-top: 65px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    var(--geekblue-2),
+    var(--geekblue-1),
+    var(--grey-2)
+  );
+}
+
+header .title {
+  /* titles */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-header .title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+header .title h1 {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 72px;
+  margin-top: 36px;
+  color: var(--grey-10);
+  letter-spacing: 16px;
+  font-family: 'comic', 'xingkai';
+}
+
+header .title h1 .red {
+  color: var(--zeqi-red);
+}
+
+header .title h1 .underline {
+  text-decoration: underline dashed var(--zeqi-red);
+  text-underline-offset: 16px;
+}
+
+header .description {
+  /* description */
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 72px;
+  width: 50%;
+  text-align: center;
+}
+
+header button {
+  /* button */
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  border: none;
+  background: var(--red-6);
+  margin-top: 72px;
+  color: var(--grey-1);
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 0 8px 4px var(--grey-2);
 }
