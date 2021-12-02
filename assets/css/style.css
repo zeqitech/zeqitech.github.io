@@ -207,7 +207,7 @@ header .btns {
 header .btns a {
   /* button */
   min-width: 180px;
-  max-width: 40vw;
+  max-width: 20vw;
   width: 200px;
   height: 60px;
   border-radius: 8px;
@@ -242,7 +242,7 @@ header .btns a:not(:first-child) {
   header .title h1 {
     font-size: 60px;
     line-height: 60px;
-    letter-spacing: 24px;
+    letter-spacing: 20px;
   }
 }
 
@@ -262,9 +262,9 @@ header .btns a:not(:first-child) {
     background-color: var(--grey-1); */
   }
   header .title h1 {
-    font-size: 50px;
-    line-height: 50px;
-    letter-spacing: 20px;
+    font-size: 54px;
+    line-height: 54px;
+    letter-spacing: 18px;
   }
   header .btns a {
     font-size: 16px;
@@ -273,9 +273,9 @@ header .btns a:not(:first-child) {
 
 @media (max-width: 600px) {
   header .title h1 {
-    font-size: 24px;
-    line-height: 24px;
-    letter-spacing: 20px;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 12px;
   }
   header .description {
     width: 80%;
@@ -287,6 +287,9 @@ header .btns a:not(:first-child) {
     flex-direction: column;
     align-items: center;
   }
+  header .btns a {
+    height: 50px;
+  }
   header .btns a:not(:first-child) {
     margin-left: unset;
     margin-top: 36px;
@@ -295,9 +298,9 @@ header .btns a:not(:first-child) {
 
 @media (max-width: 400px) {
   header .title h1 {
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 16px;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 9px;
     margin-top: 24px;
   }
   header .description {
