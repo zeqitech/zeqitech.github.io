@@ -58,6 +58,17 @@ body {
   --geekblue-2: #d6e4ff;
 }
 
+.cute-link {
+  text-decoration: underline dashed var(--zeqi-red);
+  text-underline-offset: 4px;
+  color: unset;
+}
+
+.cute-link:hover {
+  text-decoration: underline wavy var(--zeqi-red);
+  transition: all ease-in-out 0.4s;
+}
+
 /* nav ==================================================================== */
 nav {
   width: 100%;
@@ -170,34 +181,52 @@ header .title h1 {
 
 header .title h1 .red {
   color: var(--zeqi-red);
+  text-decoration: none;
 }
 
-header .title h1 .underline {
-  text-decoration: underline dashed var(--zeqi-red);
+header .title h1 .cute-link {
   text-underline-offset: 16px;
 }
 
 header .description {
   /* description */
   font-size: 16px;
-  line-height: 24px;
+  line-height: 36px;
   margin-top: 72px;
   width: 50%;
   text-align: center;
 }
 
-header button {
+header .btns {
+  /* buttons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 72px;
+}
+
+header .btns a {
   /* button */
   width: 200px;
   height: 60px;
   border-radius: 8px;
   border: none;
   background: var(--red-6);
-  margin-top: 72px;
   color: var(--grey-1);
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
   outline: none;
   box-shadow: 0 0 8px 4px var(--grey-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+header .btns a:not(:first-child) {
+  margin-left: 36px;
+  border: solid 4px var(--red-6);
+  background-color: var(--grey-2);
+  color: var(--red-6);
 }
