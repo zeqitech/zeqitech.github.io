@@ -9,53 +9,17 @@
 
 ## 维护说明
 
-### 文件结构
-
-```bash
-zeqi.github.io
-│  .gitignore
-│  .prettierrc
-│  CNAME # custom domain of website
-│  index.html # main structure
-│  LICENSE # MIT
-│  package.json # version
-│  README.md
-│
-└─assets
-    ├─css
-    │      style.css
-    │
-    ├─fonts
-    │      comic.ttf
-    │      comicbd.ttf
-    │      comici.ttf
-    │      comicz.ttf
-    │      FiraCode-Bold.woff
-    │      FiraCode-Light.woff
-    │      FiraCode-Medium.woff
-    │      FiraCode-Regular.woff
-    │      FiraCode-SemiBold.woff
-    │      FiraCode-VF.woff
-    │      HarmonyOS_Sans_SC_Black.ttf
-    │      HarmonyOS_Sans_SC_Bold.ttf
-    │      HarmonyOS_Sans_SC_Light.ttf
-    │      HarmonyOS_Sans_SC_Medium.ttf
-    │      HarmonyOS_Sans_SC_Regular.ttf
-    │      HarmonyOS_Sans_SC_Thin.ttf
-    │      xingkai.ttf
-    │
-    └─images
-            favicon.ico
-            logo.png
-```
-
 ### 维护要求
 
-**每年** 对工作室的人员情况、项目情况、比赛获奖等进行更新。
+**每年** 对工作室简介进行更新。
 
 ### 如何贡献
 
 主要负责人将作为 Collaborator 直接操作仓库；其他成员可以通过 PR 参与贡献。
+
+### 注意事项
+
+- 静态资源若有更新，请重命名静态资源（添加/修改时间戳），以更新访问者缓存。
 
 ## 关于
 
