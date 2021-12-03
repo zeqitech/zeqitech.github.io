@@ -108,39 +108,23 @@ nav .nav-title a {
   font-family: 'xingkai';
 }
 
-nav .nav-link-list a {
-  /* links */
-  text-decoration: none;
-  color: var(--grey-8);
-  position: relative;
-}
-
 /* right */
-nav .nav-link-list a:not(:first-child) {
-  margin-left: 0.8rem;
+nav .nav-contact {
+  display: flex;
+  align-items: center;
 }
 
-nav .nav-link-list a:hover,
-nav .nav-link-list a.current {
-  color: var(--grey-10);
+nav .nav-contact a {
+  height: 50%;
 }
 
-nav .nav-link-list a::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0;
-  height: 4px;
-  border-radius: 4px;
-  background-color: var(--primary-color);
-  transition: all ease-in-out 0.4s;
+nav .nav-contact a:not(:first-child) {
+  margin-left: 8px;
 }
 
-nav .nav-link-list a.current::after,
-nav .nav-link-list a:hover::after {
-  width: 100%;
+nav .nav-contact a img {
+  height: 100%;
+  object-fit: cover;
 }
 
 /* header ================================================ */
@@ -247,13 +231,6 @@ header .btns a:not(:first-child) {
 }
 
 @media (max-width: 990px) {
-  nav .nav-title {
-    width: 100%;
-    justify-content: space-between;
-  }
-  nav .nav-link-list {
-    display: none;
-  }
   header .title h1 {
     font-size: 54px;
     line-height: 54px;
